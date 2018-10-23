@@ -47,6 +47,7 @@
 		63D01C61217F53F600D8345C /* MusicAppSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicAppSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D01C65217F53F600D8345C /* MusicAppSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppSampleUITests.swift; sourceTree = "<group>"; };
 		63D01C67217F53F600D8345C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D01C73217F56DC00D8345C /* MusicAppSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusicAppSample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		63D01C44217F53F400D8345C /* MusicAppSample */ = {
 			isa = PBXGroup;
 			children = (
+				63D01C73217F56DC00D8345C /* MusicAppSample.entitlements */,
 				63D01C45217F53F400D8345C /* AppDelegate.swift */,
 				63D01C47217F53F400D8345C /* ViewController.swift */,
 				63D01C49217F53F400D8345C /* Main.storyboard */,
@@ -193,6 +195,14 @@
 				TargetAttributes = {
 					63D01C41217F53F400D8345C = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					63D01C55217F53F600D8345C = {
 						CreatedOnToolsVersion = 9.4.1;
